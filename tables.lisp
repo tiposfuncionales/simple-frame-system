@@ -61,15 +61,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 ;;; If you want a local table, use MAKE-HASH-TABLE and GETHASH.
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Packages
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(cl:defpackage #:tables
-  (:use #:common-lisp)
-  (:export #:clear-table #:deftable #:in-table-p #:map-table #:remove-key)
-  )
-
 (in-package #:tables)
 
 
@@ -160,6 +151,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 #|
+31/7/09 [ME]
+asdf-it
+
 1/3/03 [CKR]
 Problem: wouldn't load in Allegro Modern
 Cause: uppercase export strings
